@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var message: String = "5000兆円チャレンジ！"
+    @State var price: Int = 0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                Text(message)
+                    .font(.title)
+                    .navigationBarTitle("5000兆円欲しい!!")
+                    .navigationBarItems(trailing:
+                        Button(action: {
+                            message = "5000兆円チャレンジ！"
+                        }) {
+                            Text("Reset")
+                        }
+                    )
+                    .padding()
+                Button(action: {
+                    price = Int.random(in: 1...5000000000000000)
+                    message = String(price)
+                }) {
+                    Text("稼ぐ！！")
+                }
+                .font(.title)
+                .padding()
+                
+            }
+        }
     }
 }
 
