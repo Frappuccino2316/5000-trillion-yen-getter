@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2047B4F260244DC0087609B /* CountMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2047B4E260244DC0087609B /* CountMoney.swift */; };
 		B245DB232600E632005F9161 /* RandomGetMoneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245DB222600E632005F9161 /* RandomGetMoneyApp.swift */; };
 		B245DB252600E632005F9161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245DB242600E632005F9161 /* ContentView.swift */; };
 		B245DB272600E636005F9161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B245DB262600E636005F9161 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2047B4E260244DC0087609B /* CountMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountMoney.swift; sourceTree = "<group>"; };
 		B245DB1F2600E632005F9161 /* RandomGetMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomGetMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B245DB222600E632005F9161 /* RandomGetMoneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGetMoneyApp.swift; sourceTree = "<group>"; };
 		B245DB242600E632005F9161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				B245DB262600E636005F9161 /* Assets.xcassets */,
 				B245DB2B2600E636005F9161 /* Info.plist */,
 				B245DB282600E636005F9161 /* Preview Content */,
+				B2047B4E260244DC0087609B /* CountMoney.swift */,
 			);
 			path = RandomGetMoney;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				B245DB252600E632005F9161 /* ContentView.swift in Sources */,
 				B245DB232600E632005F9161 /* RandomGetMoneyApp.swift in Sources */,
+				B2047B4F260244DC0087609B /* CountMoney.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
