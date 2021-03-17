@@ -16,14 +16,16 @@ struct ContentView: View {
             VStack {
                 Text(message)
                     .font(.title)
-                    .navigationBarTitle("5000兆円欲しい!!")
-                    .navigationBarItems(trailing:
-                        Button(action: {
-                            message = "5000兆円チャレンジ！"
-                            countMoney.failure = false
-                        }) {
-                            Text("Reset")
-                        }
+                    .navigationBarTitle("5000兆円欲しい!!", displayMode: .inline)
+                    .navigationBarItems(
+                        trailing:
+                            Button(action: {
+                                message = "5000兆円チャレンジ！"
+                                countMoney.failure = false
+                            }) {
+                                Text("Reset")
+                                    .padding()
+                            }
                     )
                     .padding()
                 Button(action: {

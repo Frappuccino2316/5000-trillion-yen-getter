@@ -18,11 +18,13 @@ class CountMoney: ObservableObject {
     
     func challengeEarn() {
         let random = Int.random(in: 1...10)
-        if random == 1 {
-            failure = true
-            money = 0
-        } else {
-            earnMoney()
+        if money < 5000000000000000 {
+            if random == 1 {
+                failure = true
+                money = 0
+            } else {
+                earnMoney()
+            }
         }
     }
 }
