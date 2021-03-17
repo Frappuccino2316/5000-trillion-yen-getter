@@ -99,10 +99,10 @@
 			children = (
 				B245DB222600E632005F9161 /* RandomGetMoneyApp.swift */,
 				B245DB242600E632005F9161 /* ContentView.swift */,
+				B2047B4E260244DC0087609B /* CountMoney.swift */,
 				B245DB262600E636005F9161 /* Assets.xcassets */,
 				B245DB2B2600E636005F9161 /* Info.plist */,
 				B245DB282600E636005F9161 /* Preview Content */,
-				B2047B4E260244DC0087609B /* CountMoney.swift */,
 			);
 			path = RandomGetMoney;
 			sourceTree = "<group>";
