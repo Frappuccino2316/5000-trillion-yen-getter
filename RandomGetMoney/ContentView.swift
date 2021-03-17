@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var message: String = "5000兆円チャレンジ！"
-    @State var price: Int = 0
+    @State var countMoney: CountMoney = CountMoney()
     
     var body: some View {
         NavigationView {
@@ -20,14 +20,23 @@ struct ContentView: View {
                     .navigationBarItems(trailing:
                         Button(action: {
                             message = "5000兆円チャレンジ！"
+                            countMoney.failure = false
                         }) {
                             Text("Reset")
                         }
                     )
                     .padding()
                 Button(action: {
-                    price = Int.random(in: 1...5000000000000000)
-                    message = String(price)
+                    countMoney.challengeEarn()
+                    if countMoney.failure {
+                        message = "失敗しました。。。"
+                    } else {
+                        if countMoney.money >= 5000000000000000 {
+                            message = "5000兆円獲得！！おめでとうございます！！"
+                        } else {
+                            message = "\(countMoney.money)円"
+                        }
+                    }
                 }) {
                     Text("稼ぐ！！")
                 }
